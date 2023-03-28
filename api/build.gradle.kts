@@ -1,5 +1,7 @@
 plugins {
     id("base-module")
+    id("kotlinx-serialization")
+    id("kotlin-kapt")
 }
 
 android {
@@ -8,7 +10,7 @@ android {
 
 dependencies {
     implementation(Dependencies.kotlinLibraries)
-
-    // Unit tests
+    implementation(Dependencies.retrofitLibraries)
+    implementation(Dependencies.rxJavaLibraries)
     testImplementation(Dependencies.testLibraries)
 }

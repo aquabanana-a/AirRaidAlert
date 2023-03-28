@@ -48,14 +48,32 @@ object Dependencies {
         const val dataStore = "androidx.datastore:datastore-preferences-core:${Versions.dataStore}"
     }
 
-    object Retrofit {
+    object RxJava {
         object Versions {
-            const val retrofit = "2.9.0"
-            const val retrofitSerializationConverter = "0.8.0"
+            const val runtime = "3.1.6"
+            const val rxandroid = "3.0.2"
+            const val rxkotlin = "3.0.1"
         }
 
-        val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
-        val serializationConverter = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:${Versions.retrofitSerializationConverter}"
+        const val runtime = "io.reactivex.rxjava3:rxjava:${Versions.runtime}"
+        const val rxandroid = "io.reactivex.rxjava3:rxandroid:${Versions.rxandroid}"
+        const val rxkotlin = "io.reactivex.rxjava3:rxandroid:${Versions.rxkotlin}"
+    }
+
+    object Retrofit {
+        object Versions {
+            const val retrofit2 = "2.9.0"
+            const val gsonConverter = "2.5.0"
+            const val retrofitSerializationConverter = "0.8.0"
+            const val rxJavaAdaper = "2.9.0"
+            const val dateTime = "0.4.0"
+        }
+
+        val runtime = "com.squareup.retrofit2:retrofit:${Versions.retrofit2}"
+        val gsonConverter = "com.squareup.retrofit2:converter-gson:${Versions.gsonConverter}"
+        val rxJavaAdapter = "com.squareup.retrofit2:adapter-rxjava3:${Versions.rxJavaAdaper}"
+        val ktxSerializationConverter = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:${Versions.retrofitSerializationConverter}"
+        val ktxDateTime = "org.jetbrains.kotlinx:kotlinx-datetime:${Versions.dateTime}"
     }
 
     object Navigation {
@@ -94,6 +112,20 @@ object Dependencies {
         add(Kotlin.coroutinesCore)
         add(Kotlin.coroutinesAndroid)
         add(Kotlin.serializationJson)
+    }
+
+    val retrofitLibraries = arrayListOf<String>().apply {
+        add(Retrofit.runtime)
+        add(Retrofit.rxJavaAdapter)
+        add(Retrofit.gsonConverter)
+        add(Retrofit.ktxSerializationConverter)
+        add(Retrofit.ktxDateTime)
+    }
+
+    val rxJavaLibraries = arrayListOf<String>().apply {
+        add(RxJava.runtime)
+        add(RxJava.rxandroid)
+        add(RxJava.rxkotlin)
     }
 
     val testLibraries = arrayListOf<String>().apply {

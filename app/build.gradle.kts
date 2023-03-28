@@ -14,6 +14,10 @@ dependencies {
     implementation(Dependencies.AndroidX.material)
     implementation(Dependencies.AndroidX.constraintLayout)
 
+    implementation(Dependencies.rxJavaLibraries)
+
+    implementation(project(mapOf("path" to ":api")))
+
     // Unit tests
     testImplementation(Dependencies.testLibraries)
 }
