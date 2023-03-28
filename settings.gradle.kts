@@ -1,6 +1,7 @@
 rootProject.name = "Air Raid Alert"
 include(
-    ":app"
+    ":app",
+    ":api"
 )
 
 val isCiServer = System.getenv().containsKey("CI")

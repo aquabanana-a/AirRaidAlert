@@ -70,12 +70,14 @@ object Dependencies {
 
     object Test {
         object Versions {
-            const val junit = "4.13"
-            const val junitExt = "1.1.1"
+            const val junit = "4.13.2"
+            const val junitExt = "1.1.5"
+            const val espressoCore = "3.5.1"
         }
 
         const val junit = "junit:junit:${Versions.junit}"
         const val junitExt = "androidx.test.ext:junit:${Versions.junitExt}"
+        const val espressoCore = "androidx.test.espresso:espresso-core:${Versions.espressoCore}"
     }
 
     object Other {
@@ -97,6 +99,7 @@ object Dependencies {
     val testLibraries = arrayListOf<String>().apply {
         add(Test.junit)
         add(Test.junitExt)
+        //add(Test.espressoCore)
     }
 }
 
