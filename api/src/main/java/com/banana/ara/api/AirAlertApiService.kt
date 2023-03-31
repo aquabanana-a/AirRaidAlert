@@ -11,8 +11,8 @@ class AirAlertApiService {
     companion object {
         private const val SERVICE_KEY_HEADER = "X-API-Key"
         private const val SERVICE_KEY = "09c83cb0cc9a123bee41b274ed8df656c3c0af8f"
-
         private const val SERVICE_BASE_URL = "https://alerts.com.ua/"
+        private val SERVICE_MEDIA_TYPE = MediaType.get("application/json")
     }
 
     private val httpClient = OkHttpClient.Builder().run {
@@ -28,13 +28,17 @@ class AirAlertApiService {
     }
 
     private val retrofit = Retrofit.Builder()
-        .addConverterFactory(Json.asConverterFactory(MediaType.get("application/json")))
+        .addConverterFactory(Json.asConverterFactory(SERVICE_MEDIA_TYPE))
         .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
         .baseUrl(SERVICE_BASE_URL)
         .client(httpClient)
         .build()
 
-    private val alertApi = retrofit.create(IAirAlertApi::class.java)
+    private val alertApi = retrofit.create(AirAlertApi::class.java)
 
-    fun getStates() = alertApi.getStates()
+    fun getStates() = alertApi.getStateInfos()
+
+    fun getState(id: Int) = alertApi.getStateInfo(id)
+
+    fun getHistory() = alertApi.getHistoryInfos()
 }

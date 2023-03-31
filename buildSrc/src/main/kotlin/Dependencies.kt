@@ -12,6 +12,7 @@ object Dependencies {
             const val kotlin = "1.8.0"
             const val kotlinCoroutines = "1.6.4"
             const val kotlinSerialization = "1.5.0"
+            const val dateTime = "0.4.0"
         }
 
         const val stdlib = "org.jetbrains.kotlin:kotlin-stdlib:${Versions.kotlin}"
@@ -21,6 +22,7 @@ object Dependencies {
         const val coroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.kotlinCoroutines}"
         const val serializationCore = "org.jetbrains.kotlinx:kotlinx-serialization-core:${Versions.kotlinSerialization}"
         const val serializationJson = "org.jetbrains.kotlinx:kotlinx-serialization-json:${Versions.kotlinSerialization}"
+        const val dateTime = "org.jetbrains.kotlinx:kotlinx-datetime:${Versions.dateTime}"
     }
 
     object AndroidX {
@@ -34,6 +36,8 @@ object Dependencies {
             const val fragment = "1.5.6"
             const val swipeRefreshLayout = "1.1.0"
             const val dataStore = "1.0.0"
+            const val navigation = "2.5.3"
+            const val navigationUi = "2.5.3"
         }
 
         const val appcompat = "androidx.appcompat:appcompat:${Versions.appcompat}"
@@ -46,6 +50,8 @@ object Dependencies {
         const val fragmentKtx = "androidx.fragment:fragment-ktx:${Versions.fragment}"
         const val swipeRefreshLayout = "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.swipeRefreshLayout}"
         const val dataStore = "androidx.datastore:datastore-preferences-core:${Versions.dataStore}"
+        const val navigation = "androidx.navigation:navigation-fragment:${Versions.navigation}"
+        const val navigationUi = "androidx.navigation:navigation-ui-ktx:${Versions.navigationUi}"
     }
 
     object RxJava {
@@ -66,14 +72,12 @@ object Dependencies {
             const val gsonConverter = "2.5.0"
             const val retrofitSerializationConverter = "0.8.0"
             const val rxJavaAdaper = "2.9.0"
-            const val dateTime = "0.4.0"
         }
 
         val runtime = "com.squareup.retrofit2:retrofit:${Versions.retrofit2}"
         val gsonConverter = "com.squareup.retrofit2:converter-gson:${Versions.gsonConverter}"
         val rxJavaAdapter = "com.squareup.retrofit2:adapter-rxjava3:${Versions.rxJavaAdaper}"
         val ktxSerializationConverter = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:${Versions.retrofitSerializationConverter}"
-        val ktxDateTime = "org.jetbrains.kotlinx:kotlinx-datetime:${Versions.dateTime}"
     }
 
     object Navigation {
@@ -100,7 +104,6 @@ object Dependencies {
 
     object Other {
         object Versions {
-
         }
 
     }
@@ -112,6 +115,7 @@ object Dependencies {
         add(Kotlin.coroutinesCore)
         add(Kotlin.coroutinesAndroid)
         add(Kotlin.serializationJson)
+        add(Kotlin.dateTime)
     }
 
     val retrofitLibraries = arrayListOf<String>().apply {
@@ -119,7 +123,6 @@ object Dependencies {
         add(Retrofit.rxJavaAdapter)
         add(Retrofit.gsonConverter)
         add(Retrofit.ktxSerializationConverter)
-        add(Retrofit.ktxDateTime)
     }
 
     val rxJavaLibraries = arrayListOf<String>().apply {

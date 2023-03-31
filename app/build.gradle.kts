@@ -7,6 +7,8 @@ android {
 }
 
 dependencies {
+    implementation(project(":api"))
+
     implementation(Dependencies.kotlinLibraries)
 
     implementation(Dependencies.AndroidX.coreKtx)
@@ -16,7 +18,8 @@ dependencies {
 
     implementation(Dependencies.rxJavaLibraries)
 
-    implementation(project(mapOf("path" to ":api")))
+    implementation(Dependencies.AndroidX.navigation)
+    implementation(Dependencies.AndroidX.navigationUi)
 
     // Unit tests
     testImplementation(Dependencies.testLibraries)

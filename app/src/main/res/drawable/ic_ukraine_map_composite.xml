@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@id/state_ua_27" android:drawable="@drawable/ic_ua_27" />
+    <item android:drawable="@drawable/ic_ua_27_outline" />
+
+    <item android:id="@id/state_ua_1" android:drawable="@drawable/ic_ua_1" />
+    <item android:drawable="@drawable/ic_ua_1_outline" />
+
+    <item android:id="@id/state_ua_23" android:drawable="@drawable/ic_ua_23" />
+    <item android:drawable="@drawable/ic_ua_23_outline" />
+
+    <item android:id="@id/state_ua_25" android:drawable="@drawable/ic_ua_25" />
+    <item android:drawable="@drawable/ic_ua_25_outline" />
+
+    <item android:id="@id/state_ua_24" android:drawable="@drawable/ic_ua_24" />
+    <item android:drawable="@drawable/ic_ua_24_outline" />
+
+    <item android:id="@id/state_ua_4" android:drawable="@drawable/ic_ua_4" />
+    <item android:drawable="@drawable/ic_ua_4_outline" />
+
+    <item android:id="@id/state_ua_5" android:drawable="@drawable/ic_ua_5" />
+    <item android:drawable="@drawable/ic_ua_5_outline" />
+
+    <item android:id="@id/state_ua_9" android:drawable="@drawable/ic_ua_9" />
+    <item android:drawable="@drawable/ic_ua_9_outline" />
+
+    <item android:id="@id/state_ua_20" android:drawable="@drawable/ic_ua_20" />
+    <item android:drawable="@drawable/ic_ua_20_outline" />
+
+    <item android:id="@id/state_ua_21" android:drawable="@drawable/ic_ua_21" />
+    <item android:drawable="@drawable/ic_ua_21_outline" />
+
+    <item android:id="@id/state_ua_22" android:drawable="@drawable/ic_ua_22" />
+    <item android:drawable="@drawable/ic_ua_22_outline" />
+
+    <item android:id="@id/state_ua_26" android:drawable="@drawable/ic_ua_26" />
+    <item android:drawable="@drawable/ic_ua_26_outline" />
+
+    <item android:id="@id/state_ua_10" android:drawable="@drawable/ic_ua_10" />
+    <item android:drawable="@drawable/ic_ua_10_outline" />
+
+    <item android:id="@id/state_ua_11" android:drawable="@drawable/ic_ua_11" />
+    <item android:drawable="@drawable/ic_ua_11_outline" />
+
+    <item android:id="@id/state_ua_12" android:drawable="@drawable/ic_ua_12" />
+    <item android:drawable="@drawable/ic_ua_12_outline" />
+
+    <item android:id="@id/state_ua_13" android:drawable="@drawable/ic_ua_13" />
+    <item android:drawable="@drawable/ic_ua_13_outline" />
+
+    <item android:id="@id/state_ua_14" android:drawable="@drawable/ic_ua_14" />
+    <item android:drawable="@drawable/ic_ua_14_outline" />
+
+    <item android:id="@id/state_ua_15" android:drawable="@drawable/ic_ua_15" />
+    <item android:drawable="@drawable/ic_ua_15_outline" />
+
+    <item android:id="@id/state_ua_16" android:drawable="@drawable/ic_ua_16" />
+    <item android:drawable="@drawable/ic_ua_16_outline" />
+
+    <item android:id="@id/state_ua_17" android:drawable="@drawable/ic_ua_17" />
+    <item android:drawable="@drawable/ic_ua_17_outline" />
+
+    <item android:id="@id/state_ua_18" android:drawable="@drawable/ic_ua_18" />
+    <item android:drawable="@drawable/ic_ua_18_outline" />
+
+    <item android:id="@id/state_ua_19" android:drawable="@drawable/ic_ua_19" />
+    <item android:drawable="@drawable/ic_ua_19_outline" />
+
+    <item android:id="@id/state_ua_7" android:drawable="@drawable/ic_ua_7" />
+    <item android:drawable="@drawable/ic_ua_7_outline" />
+
+    <item android:id="@id/state_ua_2" android:drawable="@drawable/ic_ua_2" />
+    <item android:drawable="@drawable/ic_ua_2_outline" />
+
+    <item android:id="@id/state_ua_3" android:drawable="@drawable/ic_ua_3" />
+    <item android:drawable="@drawable/ic_ua_3_outline" />
+
+    <item android:id="@id/state_ua_8" android:drawable="@drawable/ic_ua_8" />
+    <item android:drawable="@drawable/ic_ua_8_outline" />
+
+    <item android:id="@id/state_ua_6" android:drawable="@drawable/ic_ua_6" />
+    <item android:drawable="@drawable/ic_ua_6_outline" />
+
+</layer-list>
