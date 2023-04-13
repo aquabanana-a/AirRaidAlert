@@ -19,15 +19,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <TextView
-        android:id="@+id/descriptionTextView"
+    <Button
+        android:id="@+id/rateButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="40dp"
-        android:layout_marginTop="20dp"
-        android:textAlignment="center"
-        android:textSize="24dp"
-        android:text="Screen is under construction.."
+        android:textSize="20dp"
+        android:text="Rate us"
         app:layout_constraintTop_toTopOf="@id/titleTextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
